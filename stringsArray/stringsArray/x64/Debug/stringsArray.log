@@ -1,0 +1,7 @@
+﻿  strArr.c
+C:\Users\Admin\Desktop\2semester\stringsArray\stringsArray\strArr.c(46,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\Desktop\2semester\stringsArray\stringsArray\strArr.c(56,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\Desktop\2semester\stringsArray\stringsArray\strArr.c(73,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\Desktop\2semester\stringsArray\stringsArray\strArr.c(71,17): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+C:\Users\Admin\Desktop\2semester\stringsArray\stringsArray\strArr.c(82,20): warning C4018: <: несоответствие типов со знаком и без знака
+  stringsArray.vcxproj -> C:\Users\Admin\Desktop\2semester\stringsArray\x64\Debug\stringsArray.exe
