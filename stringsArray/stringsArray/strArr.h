@@ -18,11 +18,12 @@ typedef struct strArray
 }strArray;
 
 strArray* newArray();
-string recordString();
 int insertElem(strArray* arr, string str);
-void printArray(strArray* arr);
-string* copyData(strArray* arr);
-void freeDataArr(strArray* arr);
 unsigned getLength(strArray* arr);
 string getElem(strArray* arr, unsigned index);
+////////////////////
+void printArray(strArray* arr);
+string* copyData(strArray* arr);
+void freePrevDataArr(strArray* arr);
 void copyNewString(strArray* arr, string str);
+string recordString();

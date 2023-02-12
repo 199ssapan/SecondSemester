@@ -23,8 +23,20 @@ int insertElem(strArray* arr, string str)
 	arr->currentCount++;
 	return 1;
 }
-	
 
+unsigned getLength(strArray* arr)
+{
+	return arr->currentCount;
+}
+
+string getElem(strArray* arr, unsigned index)
+{
+	if (index >= arr->currentCount) return NULL;
+	else return arr->data[index];
+}
+
+/////////////////////
+	
 string recordString()
 {
 	string str = (string)malloc(sizeof(char));
@@ -62,7 +74,7 @@ string* copyData(strArray* arr)
 		}
 		newArr[i][strlen(arr->data[i])] = '\0';
 	}
-	freeDataArr(arr);
+	freePrevDataArr(arr);
 	return newArr;
 }
 
@@ -77,23 +89,11 @@ void copyNewString(strArray* arr, string str)
 	arr->data[arr->currentCount][len] = '\0';
 }
 
-void freeDataArr(strArray* arr)
+void freePrevDataArr(strArray* arr)
 {
 	for (int i = 0; i < arr->currentCount; i++)
 	{
 		free(arr->data[i]);
 	}
 	free(arr->data);
-}
-
-
-unsigned getLength(strArray* arr)
-{
-	return arr->currentCount;
-}
-
-string getElem(strArray* arr, unsigned index)
-{
-	if (index >= arr->currentCount) return NULL;
-	else return arr->data[index];
 }
