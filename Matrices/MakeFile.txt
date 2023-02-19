@@ -1,0 +1,24 @@
+.PHONY all clean install uninstall
+
+all: Matrices
+
+clean:
+	rm -rf Matrices ./*.so
+
+Matrices: main.o floatMatrix.o intMatrix.o
+	gcc main.o floatMatrix.o intMatrix.o -o Matrices
+
+main.o: main.c
+	gcc -c main.c
+
+floatMatrix.o: floatMatrix.c
+	gcc -c floatMatrix.c
+
+intMatrix.o: intMatrix.c
+	gcc -c intMatrix.c
+
+install:
+		install ./Matrices/usr/local/bin
+
+uninstall:
+		rm -rf/usr/local/bin/Matrices
