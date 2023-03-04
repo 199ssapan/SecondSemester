@@ -3,8 +3,8 @@
 
 int main()
 {
-	IntMatrix* im1 = createintMatrix(2, 2);
-	IntMatrix* im2 = createintMatrix(2, 2);
+	IntMatrix* im1 = createintMatrix(2, 3);
+	IntMatrix* im2 = createintMatrix(2, 3);
 
 	fillInIntMatrix(im1);
 	printf_s("First int matrix:\n");
