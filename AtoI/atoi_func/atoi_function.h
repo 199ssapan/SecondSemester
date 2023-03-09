@@ -10,6 +10,7 @@ char* checkRawString(char* string);
 int checkIntermediateString(char* string);
 int atoiFunc(char* string);
 char* getStringWOSign(char* string);
+char* getStringWOSpaces(char* string);
 
 
 #define LESS_THEN_INT_MIN -1

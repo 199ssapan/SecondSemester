@@ -26,8 +26,9 @@ int myAtoI(char* string)
 	return 0;
 }
 
-char* checkRawString(char* string)
+char* checkRawString(char* rawString)
 {
+	char* string = getStringWOSpaces(rawString);
 	if (strlen(string) == 0) return NULL;
 	if ((string[0] < '0' || string[0] > '9') && (string[0] != '-' && string[0] != '+')) return NULL;
 	int len = strlen(string);
@@ -35,9 +36,9 @@ char* checkRawString(char* string)
 	int i = 0;
 	if (string[i] > '9' || string[i] < '0')
 	{
-		if (string[i] == '+') newString[i] = '+';
-		else if (string[i] == '-') newString[i] = '-';
-		i++;
+if (string[i] == '+') newString[i] = '+';
+else if (string[i] == '-') newString[i] = '-';
+i++;
 	}
 	for (;i < len; i++)
 	{
@@ -48,7 +49,7 @@ char* checkRawString(char* string)
 		newString[i] = string[i];
 	}
 	newString[i] = '\0';
-	
+	free(string);
 	return newString;
 }
 
@@ -125,4 +126,27 @@ char* getStringWOSign(char* string)
 	}
 	newStr[strlen(string) - 1] = '\0';
 	return newStr;
+}
+
+char* getStringWOSpaces(char* string)
+{
+	int len = strlen(string);
+	int newLen = len;
+	for (int i = 0; i < len; i++)
+	{
+		if (string[i] == ' ') continue;
+		else
+		{
+			newLen = len - i;
+			break;
+		}
+	}
+	char* newString = (char*)malloc(sizeof(char) * (newLen + 1));
+	if (newString == NULL) return NULL;
+	for (int i = len - newLen; i < len; i++)
+	{
+		newString[i - (len - newLen)] = string[i];
+	}
+	newString[newLen] = '\0';
+	return newString;
 }
