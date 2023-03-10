@@ -4,10 +4,19 @@
 int myAtoI(char* string)
 {
 	char* intermediateString = checkRawString(string);
-	if (intermediateString == NULL) return 0;
+	if (intermediateString == NULL) 
+		return 0;
 	int resultOfChecking = checkIntermediateString(intermediateString);
-	if (resultOfChecking == BIGGER_THEN_INT_MAX) return INT_MAX;
-	if (resultOfChecking == LESS_THEN_INT_MIN) return INT_MIN;
+	if (resultOfChecking == BIGGER_THEN_INT_MAX)
+	{
+		free(intermediateString);
+		return INT_MAX;
+	}
+	if (resultOfChecking == LESS_THEN_INT_MIN)
+	{
+		free(intermediateString);
+		return INT_MIN;
+	}
 	if (resultOfChecking == OK)
 	{
 		if (intermediateString[0] == '+' || intermediateString[0] == '-')
@@ -21,8 +30,11 @@ int myAtoI(char* string)
 			free(intermediateString);
 			return result;
 		}
-		return atoiFunc(intermediateString);
+		int res = atoiFunc(intermediateString);
+		free(intermediateString);
+		return res;
 	}
+	free(intermediateString);
 	return 0;
 }
 
@@ -36,9 +48,9 @@ char* checkRawString(char* rawString)
 	int i = 0;
 	if (string[i] > '9' || string[i] < '0')
 	{
-if (string[i] == '+') newString[i] = '+';
-else if (string[i] == '-') newString[i] = '-';
-i++;
+		if (string[i] == '+') newString[i] = '+';
+		else if (string[i] == '-') newString[i] = '-';
+		i++;
 	}
 	for (;i < len; i++)
 	{
@@ -49,7 +61,10 @@ i++;
 		newString[i] = string[i];
 	}
 	newString[i] = '\0';
-	free(string);
+	if (strcmp(string, rawString) == 0)
+	{
+		free(string);
+	}
 	return newString;
 }
 
@@ -134,7 +149,8 @@ char* getStringWOSpaces(char* string)
 	int newLen = len;
 	for (int i = 0; i < len; i++)
 	{
-		if (string[i] == ' ') continue;
+		if (string[i] == ' ')
+			continue;
 		else
 		{
 			newLen = len - i;

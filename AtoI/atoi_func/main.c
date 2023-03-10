@@ -22,5 +22,8 @@ int main()
 	printf_s("%d\n", myAtoI("1234smclsc5"));
 	printf_s("%d\n", myAtoI("                    -12345m;o smcl        smcls"));
 	printf_s("%d ", myAtoI("888 999"));
+	while (1) {
+		myAtoI("-2222 222222");
+	}
 	return 0;
 }

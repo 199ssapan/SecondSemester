@@ -1,0 +1,14 @@
+﻿  atoi_function.c
+C:\Users\Admin\Desktop\SecondSemester\AtoI\atoi_func\atoi_function.c(46,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Admin\Desktop\SecondSemester\AtoI\atoi_func\atoi_function.c(73,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Admin\Desktop\SecondSemester\AtoI\atoi_func\atoi_function.c(75,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Admin\Desktop\SecondSemester\AtoI\atoi_func\atoi_function.c(77,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Admin\Desktop\SecondSemester\AtoI\atoi_func\atoi_function.c(126,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Admin\Desktop\SecondSemester\AtoI\atoi_func\atoi_function.c(148,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  main.c
+  Создание кода
+  3 of 10 functions (30.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  atoi_func.vcxproj -> C:\Users\Admin\Desktop\SecondSemester\AtoI\x64\Release\atoi_func.exe
