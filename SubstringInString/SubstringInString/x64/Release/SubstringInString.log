@@ -1,0 +1,17 @@
+﻿  main.c
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\main.c(10,1): warning C4133: инициализация: несовместимые типы - из "unsigned __int64 *" в "int *"
+  subStr.c
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(8,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(11,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(15,43): warning C4133: return: несовместимые типы - из "char *" в "unsigned __int64 *"
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(5,21): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(6,20): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(26,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(29,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(22,21): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(23,20): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  SubstringInString.vcxproj -> C:\Users\Admin\Desktop\SubstringInString\x64\Release\SubstringInString.exe
