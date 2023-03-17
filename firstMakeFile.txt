@@ -1,0 +1,27 @@
+.PHONY all clean install uninstall
+all: cprog 
+clean:
+	rm -rf cprog ./*.so
+
+main.o: main.c
+	gcc -c main.c
+
+cprog: main.o u1.o u2.o u3.o utils/u4.o lib.o
+	gcc main.o u1.o u2.o u3.o utils/u4.o -o cprog
+
+u1.o: u1.c
+	gcc -c ./utils/u1.c
+
+u2.o: u2.c
+	gcc -c ./utils/u2.c
+
+u3.o: u3.c
+	gcc -c ./utils/u3.c
+
+lib.o: lib.c
+	gcc -c lib.c
+install:
+		install ./ cprog /usr/local/bin
+
+uninstall: 
+		rm -rf /usr/local/bin/cprog
