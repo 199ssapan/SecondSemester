@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maxim/GameOfLife/GOFLib/GOF.c
+GOF.h
+/home/maxim/GameOfLife/GOFLib/GOF.h
+
+/home/maxim/GameOfLife/GOFLib/GOF.h
+ncurses.h
+-
+stdlib.h
+-
+time.h
+-
+
