@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGOFLib.a  CMakeFiles/GOFLib.dir/GOF.c.o
+/usr/bin/ranlib libGOFLib.a
