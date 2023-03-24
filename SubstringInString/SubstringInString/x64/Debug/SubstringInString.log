@@ -1,14 +1,1 @@
-﻿  main.c
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\main.c(9,1): warning C4133: инициализация: несовместимые типы - из "unsigned __int64 *" в "int *"
-  subStr.c
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(8,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(11,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(15,44): warning C4047: return: "unsigned __int64 *" отличается по уровням косвенного обращения от "char **"
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(5,21): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(6,20): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(26,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(29,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(22,21): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
-C:\Users\Admin\Desktop\SubstringInString\SubstringInString\subStr.c(23,20): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
-  Создание кода...
-  SubstringInString.vcxproj -> C:\Users\Admin\Desktop\SubstringInString\x64\Debug\SubstringInString.exe
+﻿  SubstringInString.vcxproj -> C:\Users\Admin\Desktop\SecondSemester\SubstringInString\x64\Debug\SubstringInString.exe
