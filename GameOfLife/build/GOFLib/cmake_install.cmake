@@ -1,4 +1,4 @@
-# Install script for directory: /home/maxim/GameOfLife/GOFLib
+# Install script for directory: /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

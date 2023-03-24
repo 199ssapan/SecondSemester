@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/maxim/GameOfLife/GOFLib/GOF.c
+/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib/GOF.c
 GOF.h
-/home/maxim/GameOfLife/GOFLib/GOF.h
+/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib/GOF.h
 
-/home/maxim/GameOfLife/GOFLib/GOF.h
+/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib/GOF.h
 ncurses.h
 -
 stdlib.h

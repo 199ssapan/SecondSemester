@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maxim/GameOfLife
+CMAKE_SOURCE_DIR = /home/maxim/Документы/GitHub/SecondSemester/GameOfLife
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maxim/GameOfLife/build
+CMAKE_BINARY_DIR = /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -113,14 +113,14 @@ source/clean: source/CMakeFiles/source.dir/clean
 GOFLib/CMakeFiles/GOFLib.dir/all:
 	$(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/depend
 	$(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxim/GameOfLife/build/CMakeFiles --progress-num=1,2 "Built target GOFLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles --progress-num=1,2 "Built target GOFLib"
 .PHONY : GOFLib/CMakeFiles/GOFLib.dir/all
 
 # Build rule for subdir invocation for target.
 GOFLib/CMakeFiles/GOFLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/GameOfLife/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 GOFLib/CMakeFiles/GOFLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/GameOfLife/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles 0
 .PHONY : GOFLib/CMakeFiles/GOFLib.dir/rule
 
 # Convenience name for target.
@@ -140,14 +140,14 @@ GOFLib/CMakeFiles/GOFLib.dir/clean:
 source/CMakeFiles/source.dir/all: GOFLib/CMakeFiles/GOFLib.dir/all
 	$(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/depend
 	$(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxim/GameOfLife/build/CMakeFiles --progress-num=3,4 "Built target source"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles --progress-num=3,4 "Built target source"
 .PHONY : source/CMakeFiles/source.dir/all
 
 # Build rule for subdir invocation for target.
 source/CMakeFiles/source.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/GameOfLife/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/source.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/GameOfLife/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles 0
 .PHONY : source/CMakeFiles/source.dir/rule
 
 # Convenience name for target.

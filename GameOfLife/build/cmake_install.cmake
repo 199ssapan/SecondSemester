@@ -1,4 +1,4 @@
-# Install script for directory: /home/maxim/GameOfLife
+# Install script for directory: /home/maxim/Документы/GitHub/SecondSemester/GameOfLife
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/maxim/GameOfLife/build/GOFLib/cmake_install.cmake")
-  include("/home/maxim/GameOfLife/build/source/cmake_install.cmake")
+  include("/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/GOFLib/cmake_install.cmake")
+  include("/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/source/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/maxim/GameOfLife/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

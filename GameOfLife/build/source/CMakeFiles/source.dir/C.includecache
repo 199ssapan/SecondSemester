@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/maxim/GameOfLife/GOFLib/GOF.h
+/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib/GOF.h
 ncurses.h
 -
 stdlib.h
@@ -14,8 +14,8 @@ stdlib.h
 time.h
 -
 
-/home/maxim/GameOfLife/source/main.c
-/home/maxim/GameOfLife/GOFLib/GOF.h
+/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/source/main.c
+/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib/GOF.h
 -
 unistd.h
 -

@@ -1,4 +1,4 @@
-#include "/home/maxim/GameOfLife/GOFLib/GOF.h"
+#include "/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib/GOF.h"
 #include <unistd.h>
 
 int main()
@@ -23,11 +23,16 @@ int main()
     {
         printField(field);
         if (checkGameOver(field) == 0) break;
-        updateField(field);
+        if (updateField(field) == 0)
+        {
+            return 1;
+        }
         refresh();
         if (flag != 1)
         {
-           getch();
+           c = getch();
+           if (c == 'e')
+            break;
         }
         else
         {

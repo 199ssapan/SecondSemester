@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/maxim/GameOfLife/GOFLib/GOF.c" "/home/maxim/GameOfLife/build/GOFLib/CMakeFiles/GOFLib.dir/GOF.c.o"
+  "/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/GOFLib/GOF.c" "/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/GOFLib/CMakeFiles/GOFLib.dir/GOF.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

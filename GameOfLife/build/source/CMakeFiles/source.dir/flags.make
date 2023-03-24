@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/maxim/GameOfLife/source/../GOFLib 
+C_INCLUDES = -I/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/source/../GOFLib 
 

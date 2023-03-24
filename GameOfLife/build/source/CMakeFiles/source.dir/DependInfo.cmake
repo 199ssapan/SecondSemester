@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/maxim/GameOfLife/source/main.c" "/home/maxim/GameOfLife/build/source/CMakeFiles/source.dir/main.c.o"
+  "/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/source/main.c" "/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/source/CMakeFiles/source.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/maxim/GameOfLife/build/GOFLib/CMakeFiles/GOFLib.dir/DependInfo.cmake"
+  "/home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/GOFLib/CMakeFiles/GOFLib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

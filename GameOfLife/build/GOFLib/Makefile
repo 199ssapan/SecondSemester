@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maxim/GameOfLife
+CMAKE_SOURCE_DIR = /home/maxim/Документы/GitHub/SecondSemester/GameOfLife
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maxim/GameOfLife/build
+CMAKE_BINARY_DIR = /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/maxim/GameOfLife/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/GameOfLife/build/CMakeFiles /home/maxim/GameOfLife/build/GOFLib/CMakeFiles/progress.marks
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/GameOfLife/build/CMakeFiles 0
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/GOFLib/CMakeFiles/progress.marks
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/clean
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/preinstall
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/preinstall
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/maxim/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 GOFLib/CMakeFiles/GOFLib.dir/rule:
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/CMakeFiles/GOFLib.dir/rule
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 GOFLib/CMakeFiles/GOFLib.dir/rule
 .PHONY : GOFLib/CMakeFiles/GOFLib.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ GOFLib: GOFLib/CMakeFiles/GOFLib.dir/rule
 
 # fast build rule for target.
 GOFLib/fast:
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/build
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/build
 .PHONY : GOFLib/fast
 
 GOF.o: GOF.c.o
@@ -131,7 +131,7 @@ GOF.o: GOF.c.o
 
 # target to build an object file
 GOF.c.o:
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/GOF.c.o
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/GOF.c.o
 .PHONY : GOF.c.o
 
 GOF.i: GOF.c.i
@@ -140,7 +140,7 @@ GOF.i: GOF.c.i
 
 # target to preprocess a source file
 GOF.c.i:
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/GOF.c.i
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/GOF.c.i
 .PHONY : GOF.c.i
 
 GOF.s: GOF.c.s
@@ -149,7 +149,7 @@ GOF.s: GOF.c.s
 
 # target to generate assembly for a file
 GOF.c.s:
-	cd /home/maxim/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/GOF.c.s
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(MAKE) -f GOFLib/CMakeFiles/GOFLib.dir/build.make GOFLib/CMakeFiles/GOFLib.dir/GOF.c.s
 .PHONY : GOF.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/maxim/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/maxim/Документы/GitHub/SecondSemester/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

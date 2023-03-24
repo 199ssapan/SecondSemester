@@ -4,10 +4,27 @@
 Field* createField(int r, int c)
 {
     Field* field = (Field*)malloc(sizeof(Field));
+    if (field == NULL)
+        return NULL;
     field->field = (char**)malloc(sizeof(char*) * r);
+    if (field->field == NULL)
+    {
+        free(field);
+        return NULL;
+    }
     for (int i = 0; i < r; i++)
     {
         field->field[i] = (char*)malloc(sizeof(char) * c);
+        if (field->field[i] == NULL)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                free(field->field[j]);
+            }
+            free(field->field);
+            free(field);
+            return NULL;
+        }
     }
     field->rows = r;
     field->columns = c;
@@ -63,6 +80,7 @@ void drawFrame(int x, int y)
     {
         printw("# ");
     }
+    printw("   Press \'e\' to exit");
     printw("\n");
     for (int i = 0; i < x; i++)
     {
@@ -81,12 +99,25 @@ void drawFrame(int x, int y)
     move(1, 1);
 }
 
-void updateField(Field* field)
+int updateField(Field* field)
 {
     char** newField = (char**)malloc(sizeof(char*) * field->rows);
+    if (newField == NULL)
+    {
+        return 0;
+    }
     for (int i = 0; i < field->rows; i++)
     {
         newField[i] = (char*)malloc(sizeof(char) * field->columns);
+        if (newField[i] == NULL)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                free(newField[j]);
+                free(newField);
+                return 0;
+            }
+        }
     }
     for (int i = 0; i < field->rows; i++)
     {
@@ -119,6 +150,7 @@ void updateField(Field* field)
     }
     freeField(field);
     field->field = newField;
+    return 1;
     }
 
 unsigned countNeighbours(Field* field, int posX, int posY)
