@@ -1,5 +1,4 @@
 #include "/home/maxim/Документы/GitHub/SecondSemester/binaryTree/binTreeLib/binTree.h"
-//доделать доп функции по приколу
 int main()
 {
     binTree* bt = createBinTree();
